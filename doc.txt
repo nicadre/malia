@@ -1,8 +1,8 @@
 Usage:
-    malia init <name> < -c | -cpp | -go | -swift | -ruby > [--remote=<remote repository>] [-f | --framework=<vapor|rails>] [--no-docker]: init a malia project, pull docker image for the language or the framework unless --no-docker is present
-    malia init-remote <remote repository>: performs a `git remote add origin <remote repository>`
+    malia init <name> < -c | -cpp | -go | -swift | -ruby > [--remote=<remote repository>] [-f | --framework=<vapor|rails>] [--no-docker]: init the malia project, pull docker image for the language or the framework unless --no-docker is present
+    malia init-remote <remote repository>: perform a `git remote add origin <remote repository>`
     malia add <file(s)>: add <file(s)> to the git repository. If the file does not exist, create it.
-    malia commit <message> [<file(s)>]: perform a git add and a git commit with the message on <file(s)>. If file is not provided, perform a git add .
+    malia commit <message> [<file(s)>]: perform a `git add` and a `git commit` with the message on <file(s)>. If file is not provided, perform a `git add .`
     malia test [--all]: perform test on the current branch. If --all is passed, malia performs all tests
     malia push: perform a push to the remote "origin" and the current branch.
-    malia merge <to-branch> [<from-branch>]: performs all tests, open a merge request, change pivotal tracker status, performs code linter, notify other devs that is a merge request opened, and deploy to the development branch when the merge request is accepted
+    malia merge <to-branch> [<from-branch>]: perform all tests, open a merge request, change pivotal tracker status, perform code linter, notify other developers that is a merge request opened, and deploy to the development branch when the merge request is accepted
