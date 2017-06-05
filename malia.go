@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"github.com/urfave/cli"
+	"os"
+)
 
 func main() {
-	fmt.Println("Welcome to Malia!")
+	app := cli.NewApp()
+	app.Name = "malia"
+
+	app.Run(os.Args)
 }

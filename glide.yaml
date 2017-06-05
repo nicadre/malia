@@ -1,0 +1,4 @@
+package: github.com/nicadre/malia
+import:
+- package: github.com/urfave/cli
+  version: ~1.19.1
